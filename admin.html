@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Админ-панель — Зелёный помощник</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="vh" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Зелёный помощник</a>
+        <input
+          class="vh nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Открыть меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true"
+          >&#9776;</label
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="search.html">Каталог</a>
+          <a class="nav__link" href="profile.html">Кабинет</a>
+          <a class="nav__link" href="admin.html">Админка</a>
+          <a class="btn btn--ghost" href="login.html">Войти</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container layout">
+      <nav class="side" aria-label="Разделы админки">
+        <a class="side__link side__link--active" href="#offers">Предложения</a>
+        <a class="side__link" href="#moderation">Модерация</a>
+        <a class="side__link" href="#stats">Статистика</a>
+        <a class="side__link" href="#notices">Уведомления</a>
+      </nav>
+      <main id="main">
+        <section class="panel" id="offers" aria-labelledby="a1">
+          <h1 class="panel__title" id="a1">Управление предложениями</h1>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Название</th>
+                  <th>Категория</th>
+                  <th>Статус</th>
+                  <th>Действия</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Эко-отель</td>
+                  <td>Отель</td>
+                  <td>Активно</td>
+                  <td>
+                    <a href="add.html">Изменить</a> ·
+                    <button class="tag" type="button">Удалить</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Мёд</td>
+                  <td>Органика</td>
+                  <td>Скрыто</td>
+                  <td>
+                    <a href="add.html">Изменить</a> ·
+                    <button class="tag" type="button">Удалить</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><a class="btn" href="add.html">Добавить предложение</a></p>
+        </section>
+        <section class="panel" id="moderation" aria-labelledby="a2">
+          <h2 class="panel__title" id="a2">Модерация заявок</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Заявка</th>
+                  <th>Автор</th>
+                  <th>Решение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Новая ферма</td>
+                  <td>ИП Иванов</td>
+                  <td>
+                    <button class="btn" type="button">Одобрить</button>
+                    <button class="btn btn--ghost" type="button">
+                      Отклонить
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel" id="stats" aria-labelledby="a3">
+          <h2 class="panel__title" id="a3">Статистика</h2>
+          <div class="grid grid--3" style="margin-bottom: 24px">
+            <div class="stat">
+              <span class="stat__num">1 240</span
+              ><span class="card__meta">Пользователей</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">86</span
+              ><span class="card__meta">Заказов за неделю</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">12</span
+              ><span class="card__meta">Заявок на модерации</span>
+            </div>
+          </div>
+          <div class="bars" role="img" aria-label="Заказы по дням недели">
+            <div class="bars__bar" style="--v: 40%"></div>
+            <div class="bars__bar" style="--v: 65%"></div>
+            <div class="bars__bar" style="--v: 50%"></div>
+            <div class="bars__bar" style="--v: 80%"></div>
+            <div class="bars__bar" style="--v: 60%"></div>
+            <div class="bars__bar" style="--v: 90%"></div>
+            <div class="bars__bar" style="--v: 35%"></div>
+          </div>
+        </section>
+        <section class="panel" id="notices" aria-labelledby="a4">
+          <h2 class="panel__title" id="a4">Уведомления</h2>
+          <ul>
+            <li>Новая заявка от ИП Иванов</li>
+            <li>Отзыв ожидает проверки</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Зелёный помощник</strong>
+          <p class="card__meta">Эко-продукты и услуги в одном месте</p>
+        </div>
+        <nav aria-label="Каталог">
+          <a href="search.html">Фермерские хозяйства</a><br /><a
+            href="search.html"
+            >Эко-отели</a
+          ><br /><a href="search.html">Маршруты</a>
+        </nav>
+        <nav aria-label="Аккаунт">
+          <a href="login.html">Вход</a><br /><a href="register.html"
+            >Регистрация</a
+          ><br /><a href="profile.html">Кабинет</a>
+        </nav>
+        <div class="card__meta">info@example.com<br />+7 000 000-00-00</div>
+      </div>
+    </footer>
+  </body>
+</html>

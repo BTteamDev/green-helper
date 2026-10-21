@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Новое предложение — Зелёный помощник</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="vh" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Зелёный помощник</a>
+        <input
+          class="vh nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Открыть меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true"
+          >&#9776;</label
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="search.html">Каталог</a>
+          <a class="nav__link" href="profile.html">Кабинет</a>
+          <a class="nav__link" href="admin.html">Админка</a>
+          <a class="btn btn--ghost" href="login.html">Войти</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container section">
+      <h1>Добавить предложение</h1>
+      <form class="form" action="#" enctype="multipart/form-data">
+        <label class="field"
+          ><span class="field__label">Название</span
+          ><input class="field__input" name="title" required
+        /></label>
+        <div class="form__cols">
+          <label class="field"
+            ><span class="field__label">Категория</span>
+            <select class="field__input" name="cat">
+              <option>Ферма</option>
+              <option>Эко-отель</option>
+              <option>Маршрут</option>
+              <option>Органика</option>
+              <option>Услуга</option>
+            </select></label
+          >
+          <label class="field"
+            ><span class="field__label">Цена, ₽</span
+            ><input
+              class="field__input"
+              type="number"
+              min="0"
+              name="price"
+              required
+          /></label>
+        </div>
+        <label class="field"
+          ><span class="field__label">Описание</span
+          ><textarea class="field__input" name="desc" required></textarea>
+        </label>
+        <label class="field"
+          ><span class="field__label">Фото (до 5 шт.)</span
+          ><input
+            class="field__input"
+            type="file"
+            name="photos"
+            accept="image/*"
+            multiple
+        /></label>
+        <button class="btn" type="submit">Отправить на модерацию</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Зелёный помощник</strong>
+          <p class="card__meta">Эко-продукты и услуги в одном месте</p>
+        </div>
+        <nav aria-label="Каталог">
+          <a href="search.html">Фермерские хозяйства</a><br /><a
+            href="search.html"
+            >Эко-отели</a
+          ><br /><a href="search.html">Маршруты</a>
+        </nav>
+        <nav aria-label="Аккаунт">
+          <a href="login.html">Вход</a><br /><a href="register.html"
+            >Регистрация</a
+          ><br /><a href="profile.html">Кабинет</a>
+        </nav>
+        <div class="card__meta">info@example.com<br />+7 000 000-00-00</div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Каталог и поиск — Зелёный помощник</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="vh" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Зелёный помощник</a>
+        <input
+          class="vh nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Открыть меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true"
+          >&#9776;</label
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="search.html">Каталог</a>
+          <a class="nav__link" href="profile.html">Кабинет</a>
+          <a class="nav__link" href="admin.html">Админка</a>
+          <a class="btn btn--ghost" href="login.html">Войти</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container layout">
+      <aside class="side" aria-label="Фильтры">
+        <form action="#" style="display: grid; gap: 12px">
+          <label class="field"
+            ><span class="field__label">Поиск</span
+            ><input class="field__input" type="search" name="q"
+          /></label>
+          <label class="field"
+            ><span class="field__label">Категория</span
+            ><select class="field__input">
+              <option>Все</option>
+              <option>Фермы</option>
+              <option>Эко-отели</option>
+              <option>Маршруты</option>
+            </select></label
+          >
+          <label class="field"
+            ><span class="field__label">Цена до, ₽</span
+            ><input class="field__input" type="number"
+          /></label>
+          <button class="btn" type="submit">Применить</button>
+        </form>
+      </aside>
+      <main id="main">
+        <h1>Найдено: 6</h1>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="ph" role="img" aria-label="Органический мёд">фото</div>
+            <h3 class="card__title">
+              <a href="offer.html">Органический мёд</a>
+            </h3>
+            <p class="card__meta">Ферма</p>
+            <p class="card__price">450 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Эко-отель">фото</div>
+            <h3 class="card__title"><a href="offer.html">Эко-отель</a></h3>
+            <p class="card__meta">Карелия</p>
+            <p class="card__price">5 000 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Маршрут">фото</div>
+            <h3 class="card__title"><a href="offer.html">Маршрут</a></h3>
+            <p class="card__meta">2 дня</p>
+            <p class="card__price">3 200 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Овощной набор">фото</div>
+            <h3 class="card__title"><a href="offer.html">Овощной набор</a></h3>
+            <p class="card__meta">Ферма</p>
+            <p class="card__price">900 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Эко-хостел">фото</div>
+            <h3 class="card__title"><a href="offer.html">Эко-хостел</a></h3>
+            <p class="card__meta">Алтай</p>
+            <p class="card__price">2 000 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Переработка">фото</div>
+            <h3 class="card__title"><a href="offer.html">Переработка</a></h3>
+            <p class="card__meta">Услуга</p>
+            <p class="card__price">1 000 ₽</p>
+          </article>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Зелёный помощник</strong>
+          <p class="card__meta">Эко-продукты и услуги в одном месте</p>
+        </div>
+        <nav aria-label="Каталог">
+          <a href="search.html">Фермерские хозяйства</a><br /><a
+            href="search.html"
+            >Эко-отели</a
+          ><br /><a href="search.html">Маршруты</a>
+        </nav>
+        <nav aria-label="Аккаунт">
+          <a href="login.html">Вход</a><br /><a href="register.html"
+            >Регистрация</a
+          ><br /><a href="profile.html">Кабинет</a>
+        </nav>
+        <div class="card__meta">info@example.com<br />+7 000 000-00-00</div>
+      </div>
+    </footer>
+  </body>
+</html>

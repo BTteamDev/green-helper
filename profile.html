@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Личный кабинет — Зелёный помощник</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="vh" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Зелёный помощник</a>
+        <input
+          class="vh nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Открыть меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true"
+          >&#9776;</label
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="search.html">Каталог</a>
+          <a class="nav__link" href="profile.html">Кабинет</a>
+          <a class="nav__link" href="admin.html">Админка</a>
+          <a class="btn btn--ghost" href="login.html">Войти</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container layout">
+      <nav class="side" aria-label="Разделы кабинета">
+        <a class="side__link side__link--active" href="#info">Профиль</a>
+        <a class="side__link" href="#orders">История заказов</a>
+        <a class="side__link" href="#favorites">Избранное</a>
+        <a class="side__link" href="#settings">Настройки</a>
+      </nav>
+      <main id="main">
+        <section class="panel" id="info" aria-labelledby="t1">
+          <h1 class="panel__title" id="t1">Профиль</h1>
+          <div
+            class="ph ph--round"
+            style="width: 96px"
+            role="img"
+            aria-label="Аватар"
+          ></div>
+          <p>
+            <strong>Имя Фамилия</strong><br /><span class="card__meta"
+              >email@example.com</span
+            >
+          </p>
+        </section>
+        <section class="panel" id="orders" aria-labelledby="t2">
+          <h2 class="panel__title" id="t2">История заказов</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>№</th>
+                  <th>Предложение</th>
+                  <th>Дата</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>101</td>
+                  <td>Эко-отель</td>
+                  <td>01.09.2025</td>
+                  <td>Завершён</td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>Органический мёд</td>
+                  <td>10.09.2025</td>
+                  <td>В пути</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel" id="favorites" aria-labelledby="t3">
+          <h2 class="panel__title" id="t3">Избранное</h2>
+          <div class="grid grid--3">
+            <article class="card">
+              <div class="ph" role="img" aria-label="Органический мёд">
+                фото
+              </div>
+              <h3 class="card__title">
+                <a href="offer.html">Органический мёд</a>
+              </h3>
+              <p class="card__meta">Ферма</p>
+              <p class="card__price">450 ₽</p>
+            </article>
+            <article class="card">
+              <div class="ph" role="img" aria-label="Эко-отель">фото</div>
+              <h3 class="card__title"><a href="offer.html">Эко-отель</a></h3>
+              <p class="card__meta">Карелия</p>
+              <p class="card__price">5 000 ₽</p>
+            </article>
+            <article class="card">
+              <div class="ph" role="img" aria-label="Маршрут">фото</div>
+              <h3 class="card__title"><a href="offer.html">Маршрут</a></h3>
+              <p class="card__meta">2 дня</p>
+              <p class="card__price">3 200 ₽</p>
+            </article>
+          </div>
+        </section>
+        <section class="panel" id="settings" aria-labelledby="t4">
+          <h2 class="panel__title" id="t4">Настройки профиля</h2>
+          <form class="form" action="#">
+            <div class="form__cols">
+              <label class="field"
+                ><span class="field__label">Имя</span
+                ><input class="field__input" name="name"
+              /></label>
+              <label class="field"
+                ><span class="field__label">Телефон</span
+                ><input class="field__input" type="tel" name="phone"
+              /></label>
+            </div>
+            <label><input type="checkbox" /> Получать рассылку</label>
+            <button class="btn" type="submit">Сохранить</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Зелёный помощник</strong>
+          <p class="card__meta">Эко-продукты и услуги в одном месте</p>
+        </div>
+        <nav aria-label="Каталог">
+          <a href="search.html">Фермерские хозяйства</a><br /><a
+            href="search.html"
+            >Эко-отели</a
+          ><br /><a href="search.html">Маршруты</a>
+        </nav>
+        <nav aria-label="Аккаунт">
+          <a href="login.html">Вход</a><br /><a href="register.html"
+            >Регистрация</a
+          ><br /><a href="profile.html">Кабинет</a>
+        </nav>
+        <div class="card__meta">info@example.com<br />+7 000 000-00-00</div>
+      </div>
+    </footer>
+  </body>
+</html>

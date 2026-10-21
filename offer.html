@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Карточка предложения — Зелёный помощник</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="vh" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Зелёный помощник</a>
+        <input
+          class="vh nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Открыть меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true"
+          >&#9776;</label
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="search.html">Каталог</a>
+          <a class="nav__link" href="profile.html">Кабинет</a>
+          <a class="nav__link" href="admin.html">Админка</a>
+          <a class="btn btn--ghost" href="login.html">Войти</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container offer">
+      <main id="main">
+        <h1>Название предложения</h1>
+        <div class="gallery">
+          <div class="ph" role="img" aria-label="Главное фото">
+            главное фото
+          </div>
+          <div class="ph" role="img" aria-label="Фото 2">2</div>
+          <div class="ph" role="img" aria-label="Фото 3">3</div>
+          <div class="ph" role="img" aria-label="Фото 4">4</div>
+          <div class="ph" role="img" aria-label="Фото 5">5</div>
+        </div>
+        <section class="panel" style="margin-top: 24px">
+          <h2 class="panel__title">Описание</h2>
+          <p>Текст описания предложения.</p>
+        </section>
+        <section class="panel">
+          <h2 class="panel__title">Характеристики</h2>
+          <dl class="specs">
+            <dt>Категория</dt>
+            <dd>Эко-отель</dd>
+            <dt>Сертификат</dt>
+            <dd>Есть</dd>
+            <dt>Регион</dt>
+            <dd>Карелия</dd>
+          </dl>
+        </section>
+        <section class="panel">
+          <h2 class="panel__title">Отзывы</h2>
+          <article class="review">
+            <div
+              class="ph ph--round"
+              role="img"
+              aria-label="Аватар автора"
+            ></div>
+            <div>
+              <strong>Имя</strong> <span class="card__meta">5 из 5</span>
+              <p>Текст отзыва.</p>
+            </div>
+          </article>
+          <article class="review">
+            <div
+              class="ph ph--round"
+              role="img"
+              aria-label="Аватар автора"
+            ></div>
+            <div>
+              <strong>Имя</strong> <span class="card__meta">4 из 5</span>
+              <p>Текст отзыва.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+      <aside class="offer__book">
+        <form class="form" action="#" aria-label="Бронирование">
+          <p class="card__price" style="font-size: 24px; margin: 0">5 000 ₽</p>
+          <label class="field"
+            ><span class="field__label">Дата</span
+            ><input class="field__input" type="date" required
+          /></label>
+          <label class="field"
+            ><span class="field__label">Количество</span
+            ><input class="field__input" type="number" min="1" value="1"
+          /></label>
+          <button class="btn btn--block" type="submit">Забронировать</button>
+          <button class="btn btn--ghost btn--block" type="button">
+            В избранное
+          </button>
+        </form>
+      </aside>
+    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Зелёный помощник</strong>
+          <p class="card__meta">Эко-продукты и услуги в одном месте</p>
+        </div>
+        <nav aria-label="Каталог">
+          <a href="search.html">Фермерские хозяйства</a><br /><a
+            href="search.html"
+            >Эко-отели</a
+          ><br /><a href="search.html">Маршруты</a>
+        </nav>
+        <nav aria-label="Аккаунт">
+          <a href="login.html">Вход</a><br /><a href="register.html"
+            >Регистрация</a
+          ><br /><a href="profile.html">Кабинет</a>
+        </nav>
+        <div class="card__meta">info@example.com<br />+7 000 000-00-00</div>
+      </div>
+    </footer>
+  </body>
+</html>

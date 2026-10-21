@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная — Зелёный помощник</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="vh" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Зелёный помощник<!-- <img src="img/logo.svg" alt="Зелёный помощник"> --></a>
+        <input
+          class="vh nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Открыть меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true"
+          >&#9776;</label
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="search.html">Каталог</a>
+          <a class="nav__link" href="profile.html">Кабинет</a>
+          <a class="nav__link" href="admin.html">Админка</a>
+          <a class="btn btn--ghost" href="login.html">Войти</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="container section" aria-label="Эко-предложения">
+        <div
+          class="slider"
+          role="region"
+          aria-roledescription="карусель"
+          aria-label="Эко-предложения"
+        >
+          <input
+            class="vh"
+            type="radio"
+            name="slide"
+            id="s1"
+            checked
+            aria-label="Слайд 1"
+          />
+          <input
+            class="vh"
+            type="radio"
+            name="slide"
+            id="s2"
+            aria-label="Слайд 2"
+          />
+          <input
+            class="vh"
+            type="radio"
+            name="slide"
+            id="s3"
+            aria-label="Слайд 3"
+          />
+          <div class="slider__track">
+            <div class="slider__slide">
+              <div
+                class="ph ph--wide"
+                role="img"
+                aria-label="Ферма на рассвете"
+              >
+                слайд 1
+              </div>
+              <div class="slider__caption">
+                <h2>Фермерские продукты</h2>
+                <a class="btn" href="search.html">Смотреть</a>
+              </div>
+              <label class="slider__arrow slider__arrow--prev" for="s3"
+                >&lsaquo;<span class="vh">Назад</span></label
+              >
+              <label class="slider__arrow slider__arrow--next" for="s2"
+                >&rsaquo;<span class="vh">Вперёд</span></label
+              >
+            </div>
+            <div class="slider__slide">
+              <div class="ph ph--wide" role="img" aria-label="Эко-отель">
+                слайд 2
+              </div>
+              <div class="slider__caption">
+                <h2>Эко-отели</h2>
+                <a class="btn" href="search.html">Смотреть</a>
+              </div>
+              <label class="slider__arrow slider__arrow--prev" for="s1"
+                >&lsaquo;<span class="vh">Назад</span></label
+              >
+              <label class="slider__arrow slider__arrow--next" for="s3"
+                >&rsaquo;<span class="vh">Вперёд</span></label
+              >
+            </div>
+            <div class="slider__slide">
+              <div class="ph ph--wide" role="img" aria-label="Эко-маршрут">
+                слайд 3
+              </div>
+              <div class="slider__caption">
+                <h2>Эко-маршруты</h2>
+                <a class="btn" href="search.html">Смотреть</a>
+              </div>
+              <label class="slider__arrow slider__arrow--prev" for="s2"
+                >&lsaquo;<span class="vh">Назад</span></label
+              >
+              <label class="slider__arrow slider__arrow--next" for="s1"
+                >&rsaquo;<span class="vh">Вперёд</span></label
+              >
+            </div>
+          </div>
+          <div class="slider__dots">
+            <label class="slider__dot" for="s1"
+              ><span class="vh">Слайд 1</span></label
+            >
+            <label class="slider__dot" for="s2"
+              ><span class="vh">Слайд 2</span></label
+            >
+            <label class="slider__dot" for="s3"
+              ><span class="vh">Слайд 3</span></label
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" aria-labelledby="cat-title">
+        <h2 class="section__title" id="cat-title">Быстрый поиск</h2>
+        <form class="form form--row" action="search.html" role="search">
+          <label class="field"
+            ><span class="field__label">Что ищете?</span
+            ><input
+              class="field__input"
+              type="search"
+              name="q"
+              placeholder="Мёд, эко-отель, маршрут"
+          /></label>
+          <button class="btn" type="submit">Найти</button>
+        </form>
+        <p class="tags" style="margin-top: 16px">
+          <a class="tag" href="search.html">Фермы</a
+          ><a class="tag" href="search.html">Эко-отели</a
+          ><a class="tag" href="search.html">Маршруты</a
+          ><a class="tag" href="search.html">Органика</a
+          ><a class="tag" href="search.html">Переработка</a>
+        </p>
+      </section>
+
+      <section class="container section" aria-labelledby="adv-title">
+        <h2 class="section__title" id="adv-title">Почему мы</h2>
+        <div class="grid">
+          <div class="info">
+            <span class="ico" aria-hidden="true"></span>
+            <h3>Проверенные партнёры</h3>
+            <p class="card__meta">Описание преимущества</p>
+          </div>
+          <div class="info">
+            <span class="ico" aria-hidden="true"></span>
+            <h3>Эко-сертификаты</h3>
+            <p class="card__meta">Описание преимущества</p>
+          </div>
+          <div class="info">
+            <span class="ico" aria-hidden="true"></span>
+            <h3>Быстрая бронь</h3>
+            <p class="card__meta">Описание преимущества</p>
+          </div>
+          <div class="info">
+            <span class="ico" aria-hidden="true"></span>
+            <h3>Для бизнеса</h3>
+            <p class="card__meta">Описание преимущества</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" aria-labelledby="pop-title">
+        <h2 class="section__title" id="pop-title">Популярные эко-продукты</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="ph" role="img" aria-label="Органический мёд">фото</div>
+            <h3 class="card__title">
+              <a href="offer.html">Органический мёд</a>
+            </h3>
+            <p class="card__meta">Ферма «Название»</p>
+            <p class="card__price">450 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Эко-отель в лесу">фото</div>
+            <h3 class="card__title">
+              <a href="offer.html">Эко-отель в лесу</a>
+            </h3>
+            <p class="card__meta">Карелия</p>
+            <p class="card__price">от 5 000 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Маршрут по заповеднику">
+              фото
+            </div>
+            <h3 class="card__title">
+              <a href="offer.html">Маршрут по заповеднику</a>
+            </h3>
+            <p class="card__meta">2 дня</p>
+            <p class="card__price">3 200 ₽</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Вывоз вторсырья">фото</div>
+            <h3 class="card__title">
+              <a href="offer.html">Вывоз вторсырья</a>
+            </h3>
+            <p class="card__meta">Для офисов</p>
+            <p class="card__price">от 1 000 ₽</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" aria-labelledby="sub-title">
+        <h2 class="section__title" id="sub-title">Подписка на новости</h2>
+        <form class="form form--row" action="#">
+          <label class="field"
+            ><span class="field__label">Email</span
+            ><input class="field__input" type="email" name="email" required
+          /></label>
+          <button class="btn" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Зелёный помощник</strong>
+          <p class="card__meta">Эко-продукты и услуги в одном месте</p>
+        </div>
+        <nav aria-label="Каталог">
+          <a href="search.html">Фермерские хозяйства</a><br /><a
+            href="search.html"
+            >Эко-отели</a
+          ><br /><a href="search.html">Маршруты</a>
+        </nav>
+        <nav aria-label="Аккаунт">
+          <a href="login.html">Вход</a><br /><a href="register.html"
+            >Регистрация</a
+          ><br /><a href="profile.html">Кабинет</a>
+        </nav>
+        <div class="card__meta">info@example.com<br />+7 000 000-00-00</div>
+      </div>
+    </footer>
+  </body>
+</html>
